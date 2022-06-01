@@ -12,14 +12,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  static const color = const Color(0xffea83fc);
 
   @override
   Widget build(BuildContext context) {
-    var semibold;
     return Scaffold(
       appBar: AppBar(
-        title: Text("2022-05-20", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),),
+        title: const Text("2022-05-20", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),),
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.green,
@@ -44,310 +42,264 @@ class _MyAppState extends State<MyApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Hi,MRMR!",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-            SizedBox(width: 50, height: 30,),
+            const Text("Hi,MRMR!",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
+            const SizedBox(width: 50, height: 30,),
             Container(
               width: 160,height: 160,
               color: Colors.lightGreen,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text("Sample Image",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),),
                   ],
               ),
             ),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
             Container(
               width: 10000, height: 50,
               color: Colors.lightGreenAccent,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text("Our Products...",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.lightGreen),),
                 ],
               ),
             ),
-            SizedBox(height: 50,),
-            Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    child: Row(
+            const SizedBox(height: 50,),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightBlueAccent,
-                              ),
-                              Text("Smart plant",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("first description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
+                          width: 80, height: 80,
+                          color: Colors.lightBlueAccent,
                         ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.orange,
-                              ),
-                              Text("Salad Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("second description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightGreenAccent,
-                              ),
-                              Text("Fruit Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("third description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
-                        ),
+                        const Text("Smart plant",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("first description"),
+                        const SizedBox(height: 50, width: 200,),
                       ],
                     ),
-                  ),
-                  Container(
-                    child: Row(
+                    Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightBlueAccent,
-                              ),
-                              Text("Smart plant",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("first description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
+                          width: 80, height: 80,
+                          color: Colors.orange,
                         ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.orange,
-                              ),
-                              Text("Salad Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("second description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightGreenAccent,
-                              ),
-                              Text("Fruit Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                              Text("third description"),
-                              SizedBox(height: 50, width: 200,),
-                            ],
-                          ),
-                        ),
+                        const Text("Salad Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("second description"),
+                        const SizedBox(height: 50, width: 200,),
                       ],
                     ),
-                  ),
-                ],
-              ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.lightGreenAccent,
+                        ),
+                        const Text("Fruit Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("third description"),
+                        const SizedBox(height: 50, width: 200,),
+                      ],
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.lightBlueAccent,
+                        ),
+                        const Text("Smart plant",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("first description"),
+                        const SizedBox(height: 50, width: 200,),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.orange,
+                        ),
+                        const Text("Salad Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("second description"),
+                        const SizedBox(height: 50, width: 200,),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.lightGreenAccent,
+                        ),
+                        const Text("Fruit Box",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                        const Text("third description"),
+                        const SizedBox(height: 50, width: 200,),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
             ),
-            SizedBox(width: 50, height: 30,),
-            Text("             무럭무럭은\n한국디지털미디어고등학교의\n        창업동아리입니다!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-            SizedBox(width: 50, height: 40,),
-            Text("   무럭무럭\n내부 팀 소개",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-            SizedBox(width: 50, height: 40,),
+            const SizedBox(width: 50, height: 30,),
+            const Text("             무럭무럭은\n한국디지털미디어고등학교의\n        창업동아리입니다!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+            const SizedBox(width: 50, height: 40,),
+            const Text("   무럭무럭\n내부 팀 소개",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+            const SizedBox(width: 50, height: 40,),
             Container(
               height: 10, width: 30,
               color: Colors.green,
             ),
-            SizedBox(height: 40,),
-            Text("개발팀",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-            SizedBox(height: 40,),
-            Container(
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 80, height: 80,
-                                  color: Colors.lightBlueAccent,
-                                ),
-                                SizedBox(width: 200, height: 10,),
-                                Text("박은서",style: TextStyle(fontSize: 20,),),
-                                Text("20EB, Team Leader",style: TextStyle(fontSize: 15),),
-                                SizedBox(height: 80,),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 80, height: 80,
-                                  color: Colors.orange,
-                                ),
-                                SizedBox(width: 200, height: 10,),
-                                Text("최호연",style: TextStyle(fontSize: 20,),),
-                                Text("21EB, Team Member",style: TextStyle(fontSize: 15),),
-                                SizedBox(height: 80,),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 80, height: 80,
-                                  color: Colors.orange,
-                                ),
-                                SizedBox(width: 200, height: 10,),
-                                Text("백가온",style: TextStyle(fontSize: 20,),),
-                                Text("21HD, Team Meader",style: TextStyle(fontSize: 15),),
-                                SizedBox(height: 80,),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 80, height: 80,
-                                  color: Colors.lightBlueAccent,
-                                ),
-                                SizedBox(width: 200, height: 10,),
-                                Text("한연수",style: TextStyle(fontSize: 20,),),
-                                Text("21HD, Team Member",style: TextStyle(fontSize: 15),),
-                                SizedBox(height: 80,),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-              ),
-      ),
-            Text("농작물 판매 관리부",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-            SizedBox(height: 40,),
-            Container(
-              child: Column(
+            const SizedBox(height: 40,),
+            const Text("개발팀",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+            const SizedBox(height: 40,),
+            Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightBlueAccent,
-                              ),
-                              SizedBox(width: 200, height: 10,),
-                              Text("맹성재",style: TextStyle(fontSize: 20,),),
-                              Text("20EB, Team Leader",style: TextStyle(fontSize: 15),),
-                              SizedBox(height: 80,),
-                            ],
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 80, height: 80,
+                            color: Colors.lightBlueAccent,
                           ),
-                        ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.orange,
-                              ),
-                              SizedBox(width: 200, height: 10,),
-                              Text("신나리",style: TextStyle(fontSize: 20,),),
-                              Text("20EB, Team Member",style: TextStyle(fontSize: 15),),
-                              SizedBox(height: 80,),
-                            ],
+                          const SizedBox(width: 200, height: 10,),
+                          const Text("박은서",style: TextStyle(fontSize: 20,),),
+                          const Text("20EB, Team Leader",style: TextStyle(fontSize: 15),),
+                          const SizedBox(height: 80,),
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 80, height: 80,
+                            color: Colors.orange,
                           ),
-                        ),
-                      ],
-                    ),
+                          const SizedBox(width: 200, height: 10,),
+                          const Text("최호연",style: TextStyle(fontSize: 20,),),
+                          const Text("21EB, Team Member",style: TextStyle(fontSize: 15),),
+                          const SizedBox(height: 80,),
+                        ],
+                      ),
+                    ],
                   ),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.orange,
-                              ),
-                              SizedBox(width: 200, height: 10,),
-                              Text("최우성",style: TextStyle(fontSize: 20,),),
-                              Text("21HD, Team Meader",style: TextStyle(fontSize: 15),),
-                              SizedBox(height: 80,),
-                            ],
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 80, height: 80,
+                            color: Colors.orange,
                           ),
-                        ),
-                        Container(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 80, height: 80,
-                                color: Colors.lightBlueAccent,
-                              ),
-                              SizedBox(width: 200, height: 10,),
-                              Text("문서연",style: TextStyle(fontSize: 20,),),
-                              Text("21HD, Team Member",style: TextStyle(fontSize: 15),),
-                              SizedBox(height: 80,),
-                            ],
+                          const SizedBox(width: 200, height: 10,),
+                          const Text("백가온",style: TextStyle(fontSize: 20,),),
+                          const Text("21HD, Team Meader",style: TextStyle(fontSize: 15),),
+                          const SizedBox(height: 80,),
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 80, height: 80,
+                            color: Colors.lightBlueAccent,
                           ),
-                        ),
-                      ],
-                    ),
+                          const SizedBox(width: 200, height: 10,),
+                          const Text("한연수",style: TextStyle(fontSize: 20,),),
+                          const Text("21HD, Team Member",style: TextStyle(fontSize: 15),),
+                          const SizedBox(height: 80,),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
-              ),
+            ),
+            const Text("농작물 판매 관리부",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+            const SizedBox(height: 40,),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.lightBlueAccent,
+                        ),
+                        const SizedBox(width: 200, height: 10,),
+                        const Text("맹성재",style: TextStyle(fontSize: 20,),),
+                        const Text("20EB, Team Leader",style: TextStyle(fontSize: 15),),
+                        const SizedBox(height: 80,),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.orange,
+                        ),
+                        const SizedBox(width: 200, height: 10,),
+                        const Text("신나리",style: TextStyle(fontSize: 20,),),
+                        const Text("20EB, Team Member",style: TextStyle(fontSize: 15),),
+                        const SizedBox(height: 80,),
+                      ],
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.orange,
+                        ),
+                        const SizedBox(width: 200, height: 10,),
+                        const Text("최우성",style: TextStyle(fontSize: 20,),),
+                        const Text("21HD, Team Meader",style: TextStyle(fontSize: 15),),
+                        const SizedBox(height: 80,),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80, height: 80,
+                          color: Colors.lightBlueAccent,
+                        ),
+                        const SizedBox(width: 200, height: 10,),
+                        const Text("문서연",style: TextStyle(fontSize: 20,),),
+                        const Text("21HD, Team Member",style: TextStyle(fontSize: 15),),
+                        const SizedBox(height: 80,),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
