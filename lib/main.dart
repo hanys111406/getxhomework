@@ -44,10 +44,10 @@ class _MyAppState extends State<MyApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Hi,MRMR!",style: TextStyle(fontSize: 60,fontWeight: FontWeight.bold),),
+            Text("Hi,MRMR!",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
             SizedBox(width: 50, height: 30,),
             Container(
-              width: 120,height: 120,
+              width: 160,height: 160,
               color: Colors.lightGreen,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
