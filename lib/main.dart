@@ -42,8 +42,9 @@ class _MyAppState extends State<MyApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 20,),
             const Text("Hi,MRMR!",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-            const SizedBox(width: 50, height: 30,),
+            const SizedBox(width: 50, height: 20,),
             Container(
               width: 160,height: 160,
               color: Colors.lightGreen,
