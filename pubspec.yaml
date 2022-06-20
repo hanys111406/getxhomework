@@ -58,7 +58,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - C:/Users/user/OneDrive/바탕 화면/logo.png
+    - C:/Users/user/OneDrive/바탕 화면/back.png
+    - C:/Users/user/OneDrive/바탕 화면/logo1.png
+    - C:/Users/user/OneDrive/바탕 화면/next.png
+    - C:/Users/user/OneDrive/바탕 화면/qp.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
